@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Homepage from "./pages/Homepage";
 import { Switch, Route } from "react-router-dom";
+import ShopPage from "./pages/shop/ShopPage";
 
 const HatsPage = () => {
   return <div>Hats Page</div>;
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route exact path="/shop/hats">
           <HatsPage />
+        </Route>
+        <Route exact path="/shop">
+          <ShopPage />
         </Route>
       </Switch>
     </div>
