@@ -13,12 +13,10 @@ export const addItem = (item) => {
   };
 };
 
-export const removeItem = (item) => {
-  return {
-    type: actionTypes.ADD_ITEM,
-    payload: item,
-  };
-};
+export const removeItem = (item) => ({
+  type: actionTypes.REMOVE_ITEM,
+  payload: item,
+});
 
 export const clearItemFromCart = (item) => {
   return {
