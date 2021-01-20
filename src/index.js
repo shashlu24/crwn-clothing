@@ -6,12 +6,16 @@ import { Provider } from "react-redux";
 import { BrowserRouter as Router } from "react-router-dom";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
-import store from "./redux/store";
+import { PersistGate } from "redux-persist/integration/react";
+
+import { store, persistor } from "./redux/store";
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
-      <App />
+      <PersistGate persistor={persistor}>
+        <App />
+      </PersistGate>
     </Router>
   </Provider>,
   document.getElementById("root")
