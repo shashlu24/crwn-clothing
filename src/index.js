@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { Provider } from "react-redux";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
 import { PersistGate } from "redux-persist/integration/react";
@@ -12,11 +12,11 @@ import { store, persistor } from "./redux/store";
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router>
+    <BrowserRouter>
       <PersistGate persistor={persistor}>
         <App />
       </PersistGate>
-    </Router>
+    </BrowserRouter>
   </Provider>,
   document.getElementById("root")
 );

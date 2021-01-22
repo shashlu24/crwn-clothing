@@ -44,9 +44,8 @@ class App extends React.Component {
           <Route exact path="/">
             <Homepage />
           </Route>
-          <Route exact path="/shop">
-            <ShopPage />
-          </Route>
+          <Route exact path="/shop" component={ShopPage} />
+
           <Route
             exact
             path="/signin"

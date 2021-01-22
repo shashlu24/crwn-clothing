@@ -23,9 +23,54 @@
     }
   }
 
-  .total {
-    margin-top: 30px;
-    margin-left: auto;
-    font-size: 36px;
+  .checkout-container {
+    width: 100%;
+    // margin-top: 40px;
+
+    .total {
+      .total-pay {
+        width: max-content;
+        margin-left: auto;
+        font-size: 36px;
+        margin-top: 15px;
+      }
+    }
+
+    .test-warning {
+      .warning-test {
+        width: max-content;
+        color: red;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 24px;
+        margin-top: 20px;
+      }
+    }
+
+    .paynow-btn {
+      .pay-button {
+        width: max-content;
+        margin-left: auto;
+        margin-top: 15px;
+      }
+    }
   }
+
+  // .total {
+  //   margin-top: 30px;
+  //   margin-left: auto;
+  //   font-size: 36px;
+  // }
+
+  // button {
+  //   margin-top: 2.8rem;
+  //   margin-left: auto;
+  // }
+
+  // .test-warning {
+  //   text-align: center;
+  //   font-size: 1.5rem;
+  //   margin-top: 2.5rem;
+  //   color: red;
+  // }
 }
